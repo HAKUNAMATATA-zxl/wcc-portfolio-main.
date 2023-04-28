@@ -6,42 +6,92 @@
         <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>WCC Portfolio - Demo Page</title>
+        <title>WCC Portfolio - Final project </title>
 
         <!-- including for some global styling -->
         <link rel="stylesheet" href="../css/style.css">
-        <!-- if I had some styling I wanted to include on one special page -->
-        <link rel="stylesheet" href="css/demo-style.css">
 
     </head>
     <body>
         <!-- if you have sub-pages think about adding a simple back button -->
         <nav>
-            <a href="../">Back to Home</a>
+            <a href="../">HOME</a>
         </nav>
-        <header>
-            <h1>FRYDAY
-            </h1>
-            <!-- <p>Please don't include this in your portfolio.</p>  -->
-            <!-- <p>This is just a page of some demonstrations of how to include various other media, especially if you just want to document a project quickly instead of hosting the code online.</p> -->
+        <header class="documentation-header">
+            <section class="center-text">
+                <h1>FRYDAY</h1>
+                <h2>by Xueling Zhang</h6>
+                <p>The name of the game is the same as the personal brand "FRYDAY", and the main character of the game is the brand IP character "Patata"
+.</p> 
+            </section>
         </header>
 
-        <main>
+        <main class="documentation-page">
             <section>
-                <h3>The video of FRYDAY</h3>
-                <div class="responsive-video">
+                <div class="responsive-video centered-content">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/uBb4KabcZiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
                 </div>
-                <p>Video from this <a href="https://youtu.be/uBb4KabcZiA" target="_blank">Vimeo Learn Resource</a></p>
+ <p>Video from this <a href="https://youtu.be/uBb4KabcZiA" target="_blank">Vimeo Learn Resource</a></p>
 
             </section>
             <section>
-                <h3>the image</h3>
-                <img id="striped-image" src="../assets/images/game.png"/>
-               
+                <h3>Introduction</h3>
+                <p> My project is about the poster design of my own brand "FRYDAY" and its IP image. The background of this brand is derived from a negative social phenomenon - involution.</p>
             </section>
+            <section>
+                <h3>Concept and Background Research</h3>
+                
+                <p> "Involution" can be explained as a phenomenon that when a certain cultural pattern reaches its final form, it neither stabilizes nor transforms into a new form, but keeps on becoming more and more complex internally. Based on this negative social phenomenon, the brand takes it as the source of inspiration and develops the design theme of the brand and IP image around "involution.", calling on people to oppose inward roll and enjoy a relaxed and happy life. Leave your worries behind. In the brand name, "FRYDAY" is the same as "Friday", which is the English word for Friday, meaning to welcome the weekend and relax life.
+Based on the brand design background - the phenomenon of involution, the IP image is inspired by the word "Lie Down", which is a very hot Internet word recently, meaning "I don't want to roll inward anymore, choose to Lie Down ".The English expression of "Lie Down" is derived from the English word "couch potato", therefore, the brand IP extracts the concept from it and uses the image of "potato" as the The brand IP extracts the concept from it and uses the image of "potato" as the element of the brand IP. The IP image is called "Patata", which is derived from "Hakuna matata", an ancient and magical African proverb that means from now on, no worries, no dreams come true. It is the communication concept of this brand and IP image. In addition, the word "patata" means potato in Spanish.</p>
+                <p>The game's protagonist is a couch potato opposed to the inward roll in weight loss, the elements of the game from the weight loss in the fitness equipment and high-calorie food. The game will deduct 1 point when the character touches the fitness equipment and add 1 point when he touches the food, and the game will end when the time is over. This game is designed in the details of processing, in touching the fitness equipment, the potato's smile disappears, in touching the food, the potato will turn into a smiley face.
 
+</p>
+                
+                <!-- if you have a full width image try make it not too tall -->
+                <img src="../assets/images/game.png"width = "600" height="450"/> 
+                
+            </section>
+            <section>
+                <h3>Technical Implementation</h3>
+
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-third">
+                    <div class="flex-item">
+                        <img src="../assets/images/ptt02.jpg"width = "600" height="450"/>
+                    </div>
+                   
+                   
+                </div>
+                
+                <p>Handpose is a machine-learning model that allows for palm detection and hand-skeleton finger tracking in the browser. It can detect a maximum of one hand at a time and provides 21 3D hand keypoints that describe important locations on the palm and fingers. </p>
+            
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-half">
+                    <div class="flex-item">
+                        <img src="../assets/images/ptt01.jpg"width = "600" height="450"/>
+                    </div>
+                   
+                </div>
+
+                <!-- default flex item is for 4 & follows media query styling for home page -->
+                <div class="flex-container">
+                    <div class="flex-item">
+                   
+                    </div>
+                </div>
+         
+            </section>
+            <section>
+                <h3>Reflection and Future Development</h3>
+                <p>Trying out camera interactive technology in my work was a new challenge for me, and I found the process to be very interesting. I was satisfied with the results of combining this technology with my brand and creating a game. In my future works, I plan to explore more computer art-related techniques, such as sound interaction or gyroscopic sensing technology, to provide a wider range of interactive methods between my works and the audience.</p>
+            </section>
+            <section>
+                <h3>References</h3>
+                <ul>
+                    <li>https://www.geeksforgeeks.org/debouncing-in-javascript/</li>
+                    <li>https://learn.ml5js.org/#/reference/handpose</li>
+                </ul>
+            </section>
         </main>
 
         <footer>
